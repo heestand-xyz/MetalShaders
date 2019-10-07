@@ -52,7 +52,7 @@ FractionAndZero fractionAndZero(float fraction, int extend) {
     
 }
 
-float4 gradient(float fraction, array<ArrayUniforms, ARRMAX> inArr, array<bool, ARRMAX> inArrActive) {
+float4 gradient(float fraction, array<ColorStopArray, ARRMAX> inArr, array<bool, ARRMAX> inArrActive) {
     
     array<ColorStop, 7> color_stops;
     for (int i = 0; i < 7; ++i) {

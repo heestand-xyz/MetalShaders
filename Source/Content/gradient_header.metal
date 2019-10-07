@@ -24,7 +24,7 @@ struct ColorStop {
     float4 color;
 };
 
-struct ArrayUniforms {
+struct ColorStopArray {
     float fraction;
     float cr;
     float cg;
@@ -36,6 +36,6 @@ struct ArrayUniforms {
 #define HSV
 
 FractionAndZero fractionAndZero(float fraction, int extend);
-float4 gradient(float fraction, array<ArrayUniforms, ARRMAX> inArr, array<bool, ARRMAX> inArrActive);
+float4 gradient(float fraction, array<ColorStopArray, ARRMAX> inArr, array<bool, ARRMAX> inArrActive);
 
 #endif
