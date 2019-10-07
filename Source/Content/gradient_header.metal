@@ -32,8 +32,8 @@ struct ArrayUniforms {
     float ca;
 };
 
-#ifndef HSV
-#define HSV
+#ifndef GRADIENT
+#define GRADIENT
 
 FractionAndZero fractionAndZero(float fraction, int extend);
 float4 gradient(float fraction, array<ArrayUniforms, ARRMAX> inArr, array<bool, ARRMAX> inArrActive);
