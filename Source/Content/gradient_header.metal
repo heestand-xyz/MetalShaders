@@ -9,6 +9,9 @@
 #include <metal_stdlib>
 using namespace metal;
 
+#ifndef GRADIENT
+#define GRADIENT
+
 // Hardcoded at 128
 // Defined as uniformArrayMaxLimit in source
 constant int ARRMAX = 128;
@@ -31,9 +34,6 @@ struct ColorStopArray {
     float cb;
     float ca;
 };
-
-#ifndef GRADIENT
-#define GRADIENT
 
 FractionAndZero fractionAndZero(float fraction, int extend);
 float4 gradient(float fraction, array<ColorStopArray, ARRMAX> inArr, array<bool, ARRMAX> inArrActive);
