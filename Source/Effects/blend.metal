@@ -17,7 +17,7 @@ float4 lerpColor(float4 fraction, float4 from, float4 to) {
 
 float4 blend(int mode, float4 ca, float4 cb) {
     
-    float pi = 3.14159265359;
+    float pi = M_1_PI_F;
 
     float4 c;
     float3 rgb_a = float3(ca);
